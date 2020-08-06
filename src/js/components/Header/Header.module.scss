@@ -1,0 +1,49 @@
+@import '../../../style/variables.scss';
+
+.Header{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    h6{
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        color: $baseRed;
+    }
+}
+
+.hero{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    .left{
+        flex:1;
+        color: white;
+     
+        p{
+            opacity: .6;
+        }
+     
+    }
+    .right{
+        flex:1;
+        margin-right: -200px;
+
+    }
+}
+
+.buttons{
+    display: flex;    
+}
