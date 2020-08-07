@@ -1,0 +1,78 @@
+
+@mixin card{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+}
+.StatsContainer{
+    background: #5b5b5c
+}
+.Stats{
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    transform: translateY(-100px);
+    grid-gap: 20px;
+
+}
+
+.statRow{
+    @include card;
+    height: 200px;
+    grid-column: 1/ -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statMap{
+    @include card;
+    height: 600px;
+    width: 100%;
+    grid-column: 1/ 2;
+    grid-row: 2/3;
+}
+.statMap .leaflet-container{
+    height: 100%;
+}
+
+.statTable{
+    @include card;
+    height: 600px;
+    width: 100%;
+    grid-column: 2/ 3;
+    grid-row: 2/3;
+    overflow: scroll;
+}
+.stat{
+    text-align:center;
+    .cases{
+        color: rgb(255, 127, 7);
+    }
+    .deaths{
+        color: red;
+    }
+    .recovered{
+        color: green;
+    }
+
+}
+
+
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        text-align: left;
+        font-size: 14px;
+        padding: 10px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f0eeee;
+      }

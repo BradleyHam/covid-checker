@@ -2,7 +2,7 @@
 
 .Header{
     height: 100vh;
-    position: absolute;
+    position: relative;
     top: 0;
     background-color: black;
     width: 100%;
@@ -29,7 +29,7 @@
     width: 80%;
     margin: auto;
     .left{
-        flex:1;
+        flex:5;
         color: white;
      
         p{
@@ -39,11 +39,14 @@
     }
     .right{
         flex:1;
-        margin-right: -200px;
+        width: 800px;
+        margin-left: -150px;
 
     }
 }
 
-.buttons{
-    display: flex;    
+.button{
+    background-color: $baseRed !important;
+    color: white !important;
+    margin-top: 10px !important;
 }

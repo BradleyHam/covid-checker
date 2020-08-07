@@ -1,0 +1,25 @@
+@import '../../../style/variables.scss';
+
+.Symptoms{
+    height: 100vh;
+    background:#333;
+    margin-top: -200px;
+    position: relative;
+    z-index: -1;
+    padding: 0 100px;
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+    position: static;
+}
+.symptomsRow{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    div{
+        flex-basis: 270px;
+        text-align: left;
+        margin: 0 15px;
+    }
+}

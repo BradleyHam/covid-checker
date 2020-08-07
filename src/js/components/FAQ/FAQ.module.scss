@@ -1,0 +1,37 @@
+.FAQ{
+    background: white; 
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.accordianContainer{
+    display: flex;
+    
+    height: 500px;
+    margin: 100px;
+    &Left{
+        flex:2;
+        border:1px dotted red;
+        height: 100%
+    }
+    &Right{
+        flex: 4;
+        border: 1px dotted blue;
+    }
+}
+
+.accordianOptionList{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    li{
+       width: 100%;
+        text-align: left;
+        padding: 5px 20px;; 
+    }
+
+}

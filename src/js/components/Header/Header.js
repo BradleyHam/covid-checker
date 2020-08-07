@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import classes from './Header.module.scss'
 import logo from '../../../assets/images/Group 17 Copy.png'
 import virus from '../../../assets/images/virus.png'
-import Button from '../Button/Button'
+import { Button } from '@material-ui/core';
 
 export class Header extends Component {
     render() {
@@ -17,11 +17,13 @@ export class Header extends Component {
                             <h1>COVID-19 Live Tracker</h1>
                             <p>The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, China in December 2019, the outbreak was later recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
                             <div className={classes.buttons}>
-                                <Button text='Donate'/>
+                                <Button variant="contained" className={classes.button}>
+                                     Secondary
+                                </Button>
                             </div>
                         </div>
                         <div className={classes.right}>
-                            <img src={virus}/>
+                            <img src={virus} alt='virus'/>
                         </div>
                 </div>
             </div>
