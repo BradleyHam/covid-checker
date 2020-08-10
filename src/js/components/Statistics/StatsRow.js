@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import classes from './Statistics.module.scss';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import internet from '../../../assets/images/internet.svg'
+
 
 function StatsRow(props) {
     let formatter = new Intl.NumberFormat();
@@ -17,7 +19,8 @@ function StatsRow(props) {
     return (
         <div className={classes.statRow}>
             <div className={classes.stat}>
-
+                <div className={classes.locationContainer}>
+                <img src={internet} className={classes.globe}/>
                 <FormControl className={classes.formControl} style={{width:" 150px"}}>
                 <InputLabel id="demo-simple-select-label">Location</InputLabel>
                     <Select
@@ -29,7 +32,7 @@ function StatsRow(props) {
                      {props.countries && countries.map(({country}) => <MenuItem key={country} value={country}>{country}</MenuItem>)}
                     </Select>
                  </FormControl>
-
+</div>
 
             </div>
             <div className={classes.stat}>

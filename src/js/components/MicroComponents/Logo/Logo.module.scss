@@ -1,0 +1,14 @@
+@import '../../../../style/variables.scss';
+.logo{
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 100px;
+    h6{
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        color: $baseRed;
+    }
+}
+

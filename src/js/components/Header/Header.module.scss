@@ -8,19 +8,7 @@
     width: 100%;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 100px;
-    h6{
-        margin-left: 10px;
-        font-weight: bold;
-        font-size: 24px;
-        color: $baseRed;
-    }
-}
+
 
 .hero{
     display: flex;
@@ -28,6 +16,7 @@
     align-items: center;
     width: 80%;
     margin: auto;
+    margin-top: -100px;
     .left{
         flex:5;
         color: white;
@@ -48,5 +37,13 @@
 .button{
     background-color: $baseRed !important;
     color: white !important;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
+    padding: 8px 25px !important;
+}
+
+.nav{
+    margin: 0 100px;;
+    height: 90px;
+    display: flex;
+    align-items: center;
 }

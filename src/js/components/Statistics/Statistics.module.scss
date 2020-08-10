@@ -1,3 +1,4 @@
+@import '../../../style/variables.scss';
 
 @mixin card{
     background: white;
@@ -5,7 +6,8 @@
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
 }
 .StatsContainer{
-    background: #5b5b5c
+    background: #fff;
+    color: $textLight;
 }
 .Stats{
     height: 100vh;
@@ -34,6 +36,23 @@
     width: 100%;
     grid-column: 1/ 2;
     grid-row: 2/3;
+    position: relative;
+}
+.mapBlocker{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 40px;
+    z-index: 1000000 !important;
+}
+.mapBlockerTwo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40px;
+    z-index: 1000000 !important;
 }
 .statMap .leaflet-container{
     height: 100%;
@@ -49,30 +68,40 @@
 }
 .stat{
     text-align:center;
-    .cases{
-        color: rgb(255, 127, 7);
-    }
-    .deaths{
-        color: red;
-    }
-    .recovered{
-        color: green;
-    }
+    // .cases{
+    //     color: rgb(255, 127, 7);
+    // }
+    // .deaths{
+    //     color: red;
+    // }
+    // .recovered{
+    //     color: green;
+    // }
 
 }
 
-
-    .table {
+.table {
         border-collapse: collapse;
         width: 100%;
-      }
+}
       
       td, th {
         text-align: left;
         font-size: 14px;
         padding: 10px;
-      }
+}
       
       tr:nth-child(even) {
         background-color: #f0eeee;
-      }
+ }
+
+.globe{
+     height: 40px;
+     width: 40px;
+     margin-right: 10px;;
+}
+.locationContainer{
+    display: flex;
+    align-items: center;
+    
+}

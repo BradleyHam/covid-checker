@@ -1,23 +1,25 @@
+@import '../../../style//variables.scss';
 .FAQ{
-    background: white; 
-    height: 100vh;
+    background: #ffffff;
+    min-height: 100vh;
     width: 100%;
     text-align: center;
+    padding: 100px 0;
+    color: $textLight;
+
 }
 
 .accordianContainer{
     display: flex;
-    
-    height: 500px;
     margin: 100px;
+    text-align: left;
     &Left{
         flex:2;
-        border:1px dotted red;
         height: 100%
     }
     &Right{
         flex: 4;
-        border: 1px dotted blue;
+        border-radius: 5px;
     }
 }
 
@@ -25,13 +27,22 @@
     height: 100%;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     list-style-type: none;
     li{
-       width: 100%;
+       width: 90%;
         text-align: left;
-        padding: 5px 20px;; 
+        padding: 5px 20px;
+        margin: 3px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+        background: white;
     }
 
+}
+
+.active{
+    border: 2px solid rgb(0, 0, 0)!important;
 }

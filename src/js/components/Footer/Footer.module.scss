@@ -1,4 +1,57 @@
+@import '../../../style/variables.scss';
+
 .Footer{
     height: 30vh;
     background: black;
+
+}
+.footerContainer{
+    margin: 0 100px;
+    display: flex;
+    align-items: center; 
+    height: 100%;
+
+    form{
+        padding: 20px;
+        flex: 4;
+    }
+    div{
+        flex: 2;
+        order: -1;
+    }
+}
+.emailContainer{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    
+    input{
+        height: 100%;
+        flex: 14;
+        border-radius: 10px;
+        transform: translateX(15px);
+        border: none;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 17px;
+    }
+}  
+
+div.button{
+    background: $baseRed;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    order: 1;
+    flex: 1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    img{
+        height: 60%;
+    }
 }
